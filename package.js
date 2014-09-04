@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Npm.depends({
-  "usage": "0.4.12"
+  "usage": "0.4.13"
 });
 
 Package.onUse(function(api) {
