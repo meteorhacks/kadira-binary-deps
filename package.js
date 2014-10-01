@@ -6,7 +6,8 @@ Package.describe({
 });
 
 Npm.depends({
-  "usage": "0.4.13"
+  "usage": "0.4.13",
+  "v8-profiler": "5.2.0"
 });
 
 Package.onUse(function(api) {
