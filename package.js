@@ -1,6 +1,6 @@
 Package.describe({
   "summary": "Binary Dependencies for Kadira",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "git": "https://github.com/meteorhacks/kadira-binary-deps.git",
   "name": "meteorhacks:kadira-binary-deps"
 });
