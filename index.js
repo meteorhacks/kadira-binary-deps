@@ -1,3 +1,4 @@
-KadiraBinaryDeps = {
-  usage: Npm.require('usage')
+KadiraBinaryDeps = {};
+KadiraBinaryDeps.require = function(module) {
+  return Npm.require(module);
 };

@@ -1,13 +1,14 @@
 Package.describe({
   "summary": "Binary Dependencies for Kadira",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "git": "https://github.com/meteorhacks/kadira-binary-deps.git",
   "name": "meteorhacks:kadira-binary-deps"
 });
 
 Npm.depends({
-  "usage": "0.4.13",
-  "v8-profiler": "5.2.0"
+  "usage": "0.5.0",
+  "v8-profiler": "5.2.0",
+  "gc-profiler": "1.0.2"
 });
 
 Package.onUse(function(api) {
@@ -17,11 +18,11 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   configure(api);
+  api.versionsFrom('METEOR@0.9.0');
   api.use('tinytest');
   api.add_files('test.js', 'server');
 });
 
 function configure(api) {
-  api.versionsFrom('METEOR@0.9.0');
   api.add_files('index.js', 'server');
 }
