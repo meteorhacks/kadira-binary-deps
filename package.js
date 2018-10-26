@@ -1,12 +1,11 @@
 Package.describe({
   "summary": "Binary Dependencies for Kadira",
-  "version": "1.5.0",
-  "git": "https://github.com/meteorhacks/kadira-binary-deps.git",
-  "name": "meteorhacks:kadira-binary-deps"
+  "version": "1.6.0",
+  "name": "pnyx:kadira-binary-deps"
 });
 
 Npm.depends({
-  "v8-profiler": "5.6.5"
+  "v8-profiler": "5.7.0"
 });
 
 Package.onUse(function(api) {
